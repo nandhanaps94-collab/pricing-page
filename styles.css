@@ -1361,36 +1361,195 @@ input:checked + .slider-round:before {
   }
 }
 
-/* Responsive Media Queries */
+/* Responsive Media Queries (Laptops, Tablets, & Mobile Phones) */
 @media (max-width: 1024px) {
   .pricing-cards-grid.grid-3-cards {
     grid-template-columns: 1fr;
     gap: 32px;
+    max-width: 540px;
+    margin: 0 auto;
   }
 
   .pricing-card.card-popular-green {
     transform: none;
   }
+  
   .pricing-card.card-popular-green:hover {
     transform: translateY(-6px);
+  }
+
+  .conversations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
 @media (max-width: 768px) {
+  /* Compact Mobile Header */
+  .navbar-header {
+    height: auto;
+    min-height: 60px;
+    padding: 8px 0;
+  }
+
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .dual-brand-container {
+    gap: 10px;
+  }
+
+  .brand-block {
+    gap: 8px;
+  }
+
+  .brand-logo-icon {
+    height: 32px;
+    max-height: 32px;
+  }
+
+  .text-connect, .text-stream {
+    font-size: 15px;
+  }
+
+  .text-tagline {
+    font-size: 9.5px;
+  }
+
+  .brand-divider {
+    height: 28px;
+  }
+
+  .meta-partner-img {
+    height: 32px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .nav-actions .btn-ghost {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .nav-actions .btn-primary {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  /* Hero & Headlines */
+  .hero-header {
+    margin-bottom: 36px;
+  }
+
   .main-headline {
-    font-size: 2.1rem;
+    font-size: 1.85rem;
+    line-height: 1.25;
   }
 
   .sub-headline {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
   }
 
-  .replaces-grid {
+  /* Features Grid */
+  .feature-conversations-section {
+    padding: 56px 0;
+  }
+
+  .feature-headline {
+    font-size: 1.75rem;
+  }
+
+  .feature-subheadline {
+    font-size: 0.95rem;
+  }
+
+  .conversations-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 36px;
   }
 
-  .savings-calculator-box {
+  .conversation-card {
+    padding: 24px 20px;
+    border-radius: 14px;
+  }
+
+  /* Trust Footer */
+  .trust-footer {
     flex-direction: column;
+    gap: 12px;
+    align-items: center;
     text-align: center;
+    margin-top: 36px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 40px 0 24px;
+  }
+
+  .footer-brand.footer-brand-centered {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .footer-tagline {
+    font-size: 0.875rem;
+  }
+
+  /* Modal */
+  .modal-card {
+    padding: 24px 20px;
+    max-width: 92vw;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra Small Devices */
+  .announcement-bar {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    text-align: center;
+  }
+
+  .announcement-content {
+    gap: 6px;
+  }
+
+  .brand-divider {
+    display: none; /* Hide divider line on tight screens */
+  }
+
+  .meta-partner-block {
+    display: none; /* Hide meta logo on small mobile screens to keep header clean */
+  }
+
+  .brand-logo-icon {
+    height: 30px;
+  }
+
+  .text-connect, .text-stream {
+    font-size: 14px;
+  }
+
+  .text-tagline {
+    font-size: 8.5px;
+  }
+
+  .main-headline {
+    font-size: 1.6rem;
+  }
+
+  .pricing-card.green-card {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+
+  .price-amount {
+    font-size: 32px;
   }
 }
