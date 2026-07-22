@@ -698,6 +698,22 @@ input:checked + .slider-round:before {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.card-billing-cycle {
+  font-family: var(--font-family);
+  font-size: 0.775rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(4px);
+}
+
 /* FEATURE CONVERSATIONS GRID SECTION */
 .feature-conversations-section {
   background-color: #f9fafb;
