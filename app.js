@@ -173,3 +173,22 @@ function showToast(message) {
     }, 300);
   }, 4000);
 }
+
+// 5. Mobile Hamburger Navigation Menu Toggle
+function toggleMobileMenu() {
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+  if (hamburgerBtn && mobileMenuDrawer) {
+    hamburgerBtn.classList.toggle('active');
+    mobileMenuDrawer.classList.toggle('hidden');
+  }
+}
+
+function closeMobileMenu() {
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+  if (hamburgerBtn && mobileMenuDrawer) {
+    hamburgerBtn.classList.remove('active');
+    mobileMenuDrawer.classList.add('hidden');
+  }
+}

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=3.0" />
+  <link rel="stylesheet" href="styles.css?v=4.0" />
 
   <!-- Guaranteed Mobile Responsive Styles -->
   <style>
@@ -136,9 +136,31 @@
         </div>
       </div>
 
-      <div class="nav-actions">
+      <!-- Action Buttons (Desktop Only) -->
+      <div class="nav-actions desktop-only">
         <a href="#login" class="btn btn-ghost" onclick="openModal('Login')">Sign In</a>
         <button class="btn btn-primary" onclick="openModal('Growth')">Start Free Trial</button>
+      </div>
+
+      <!-- Hamburger Menu Button (Mobile Only) -->
+      <button id="hamburger-btn" class="hamburger-btn mobile-only" aria-label="Toggle Navigation Menu" onclick="toggleMobileMenu()">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Slide-Down Navigation Menu Drawer -->
+    <div id="mobile-menu-drawer" class="mobile-menu-drawer hidden">
+      <div class="mobile-menu-content">
+        <a href="#pricing" class="mobile-nav-link" onclick="closeMobileMenu()">Pricing Plans</a>
+        <a href="#features" class="mobile-nav-link" onclick="closeMobileMenu()">WhatsApp Features</a>
+        <a href="#faq" class="mobile-nav-link" onclick="closeMobileMenu()">FAQ & Support</a>
+        <div class="mobile-menu-divider"></div>
+        <div class="mobile-actions-group">
+          <a href="#login" class="btn btn-ghost btn-block" onclick="openModal('Login'); closeMobileMenu(); return false;">Sign In</a>
+          <button class="btn btn-primary btn-block" onclick="openModal('Growth'); closeMobileMenu();">Start Free Trial</button>
+        </div>
       </div>
     </div>
   </header>
