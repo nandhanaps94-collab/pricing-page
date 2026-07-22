@@ -761,18 +761,24 @@ input:checked + .slider-round:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 36px;
   margin-top: 48px;
   flex-wrap: wrap;
 }
 
 .trust-item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 8px;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--slate-600);
+  text-align: center;
+}
+
+.trust-item svg {
+  flex-shrink: 0;
 }
 
 /* SECTION 3: REPLACES POINT SOLUTIONS BANNER */
@@ -1500,8 +1506,25 @@ input:checked + .slider-round:before {
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    justify-content: center;
     text-align: center;
     margin-top: 36px;
+    width: 100%;
+  }
+
+  .trust-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    font-size: 0.825rem;
+  }
+
+  .trust-item svg {
+    flex-shrink: 0;
   }
 
   /* Footer */
